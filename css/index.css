@@ -30,6 +30,14 @@ body {
   font-size: 1.5em;
   color: #a95396;
 }
+@media (max-width: 800px) {
+  .christmas .to .name {
+    font-size: 2em;
+  }
+  .christmas .to .place-time-and-greeting {
+    font-size: 1.25em;
+  }
+}
 .christmas a.christmas-message {
   position: absolute;
   left: 25%;
@@ -41,6 +49,7 @@ body {
   margin: 0 auto;
   background: url(../images/merry-christmas.png) no-repeat 50% 50%/contain;
 }
+
 .christmas a.christmas-message:hover {
   background: url(../images/merry-christmas-hover.png) no-repeat 50% 50%/contain;
 }
@@ -64,6 +73,22 @@ body {
   width: 100%;
   z-index: 3;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .christmas a.christmas-message {
+    left: 50%;
+    height: 150px;
+    top: 325px;
+    width: calc(100% - 6rem);
+  }
+}
+@media (max-width: 800px) {
+  .christmas a.stable {
+    left: 50%;
+    height: 150px;
+    top: 450px;
+    width: calc(100% - 6rem);
+  }
 }
 .christmas .close .from {
   font-family: "Merienda", sans-serif;
