@@ -165,7 +165,7 @@ let addLocationAndTime = function(){
 		language = languageString.split(",")[0];
 		const timeString = getTimeString(language, timeZone);
 
-		const placeTimeAndGreetingString = "<div class='place-and-time'>It's <span id='time'>" + timeString +"</span> in <span id='place'>" + placeString + "</span></div><div class='greeting'>Hope you have a happy Christmas and New Year period whereever you are</div>";
+		const placeTimeAndGreetingString = "<div class='place-and-time'>It's <span id='time'>" + timeString +"</span> in <span id='place'>" + placeString + "</span></div><div class='greeting'>Hope you have a happy Christmas and New Year period wherever you are</div>";
 		$(".place-time-and-greeting").html(placeTimeAndGreetingString);
 	});
 }

@@ -18,7 +18,7 @@ body {
 .christmas .to div {
   font-family: 'Merienda', cursive;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   text-shadow: 1px 1px #ffffff;
 }
 .christmas .to .name {
@@ -30,27 +30,33 @@ body {
   font-size: 1.5em;
   color: #a95396;
 }
-.christmas .christmas-message {
+.christmas a.christmas-message {
   position: absolute;
   left: 25%;
   top: 55%;
-  z-index: 2;
+  z-index: 5;
   transform: translate(-50%, -50%);
   width: calc(45% - 6rem);
   height: calc(100% - 12rem);
   margin: 0 auto;
   background: url(../images/merry-christmas.png) no-repeat 50% 50%/contain;
 }
-.christmas .stable {
+.christmas a.christmas-message:hover {
+  background: url(../images/merry-christmas-hover.png) no-repeat 50% 50%/contain;
+}
+.christmas a.stable {
   position: absolute;
   left: 75%;
   top: 55%;
-  z-index: 2;
+  z-index: 5;
   transform: translate(-50%, -50%);
   width: calc(45% - 6rem);
   height: calc(100% - 12rem);
   margin: 0 auto;
   background: url(../images/stable.png) no-repeat 50% 50%/contain;
+}
+.christmas a.stable:hover {
+  background: url(../images/stable-hover.png) no-repeat 50% 50%/contain;
 }
 .christmas .close {
   position: absolute;
@@ -64,7 +70,11 @@ body {
   color: #a95396;
   font-size: 1.5em;
   text-shadow: 1px 1px #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+}
+@keyframes to-3em {
+  from {font-size: 0em;}
+  to {font-size: 3em;}
 }
 .christmas .close .link {
   display: inline-block;
@@ -72,7 +82,8 @@ body {
   font-size: 3em;
   color: #3c7383;
   text-shadow: 1px 1px #ffffff; 
-  transition: 400ms ease;
+  animation-name: to-3em;
+  animation-duration: 2s;
   text-decoration: none;
 }
 .christmas .close .link:hover {
@@ -83,4 +94,39 @@ body {
   height: 100%;
   position: relative;
   z-index: 2;
+}
+.footer {
+  width: 100%;
+  color: #ffffff;
+}
+.footer a {
+  text-decoration: none;
+  color: #a95396;
+}
+@keyframes easter-eggs{
+  from{
+    -webkit-transform:translateX(0px);
+    -ms-transform:translateX(0px);
+    transform:translateX(0px);
+  }
+  to
+  {-webkit-transform:translateX(250px);
+    -ms-transform:translateX(250px);
+    transform:translateX(250px)
+  }
+}
+.footer .easter-eggs {
+  font-size: 20px;
+  position: absolute;
+  bottom: 40px;
+  left: -250px;
+  animation-name: easter-eggs;
+  animation-delay: 5000ms;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+.footer .attribution {
+  font-size: 15px;
+  position: absolute;
+  bottom: 15px;
 }
