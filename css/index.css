@@ -98,6 +98,7 @@ body {
 .footer {
   width: 100%;
   color: #ffffff;
+  z-index: 5;
 }
 .footer a {
   text-decoration: none;
@@ -118,7 +119,7 @@ body {
 .footer .easter-eggs {
   font-size: 20px;
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   left: -250px;
   animation-name: easter-eggs;
   animation-delay: 5000ms;
@@ -128,5 +129,6 @@ body {
 .footer .attribution {
   font-size: 15px;
   position: absolute;
-  bottom: 15px;
+  bottom: 5px;
+  z-index: 5;
 }
