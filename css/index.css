@@ -32,10 +32,10 @@ body {
 }
 @media (max-width: 800px) {
   .christmas .to .name {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .christmas .to .place-time-and-greeting {
-    font-size: 1.25em;
+    font-size: 1.15em;
   }
 }
 .christmas a.christmas-message {
